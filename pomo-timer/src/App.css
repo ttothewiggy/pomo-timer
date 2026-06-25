@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #111827;
+  color: #f9fafb;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.2rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.timer-card {
+  width: min(100%, 520px);
+  padding: 2rem;
+  border-radius: 2rem;
+  background: #1f2937;
+  text-align: center;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.mode-buttons button {
+  background: #374151;
+  color: #f9fafb;
+}
+
+.mode-buttons button.active {
+  background: #f9fafb;
+  color: #111827;
+}
+
+.mode-label {
+  margin: 0;
+  color: #d1d5db;
+  font-size: 1.2rem;
+}
+
+.timer {
+  margin: 1rem 0 2rem;
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 1;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.controls button:first-child {
+  background: #22c55e;
+  color: #052e16;
+  min-width: 120px;
+}
+
+.controls button:last-child {
+  background: #4b5563;
+  color: #f9fafb;
+}
+
+.sessions {
+  color: #d1d5db;
+}
